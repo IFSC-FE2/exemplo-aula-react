@@ -1,5 +1,5 @@
 import './App.css'
-import Lar from './paginas/Lar'
+import Lar from './paginas/Home'
 
 function App() {
 
