@@ -17,7 +17,11 @@ const useTarefas = () => {
 
     const listarTarefas = () => [...tarefas]
 
-    return { alterarPrioridade, listarTarefas }
+    const buscarTarefa = (id: number) => {
+        return tarefas.find(tarefa => tarefa.id === id)
+    }
+
+    return { alterarPrioridade, listarTarefas, buscarTarefa }
 }
 
 export default useTarefas
